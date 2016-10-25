@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Allura|Ubuntu+Mono);
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger {
+}
+
+.nav {
+  height: 0%;
+  width: 0%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */ 
+  bottom: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x, overflow-y: hidden; /* Disable horizontal scroll */
+  transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.visible {
+  height: 80%;
+  width: 100%
+}
+
+/* Position the content inside the overlay */
+.nav-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.nav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.1s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.nav a:hover, .nav a:focus {
+  color: #f1f1f1;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .nav a {font-size: 20px}
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+input {
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Allura', handwriting;
+  color: #525454;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+#hide-areas,
+#show-areas {
+  font-family: 'Ubuntu+Mono', monospace;
+  width: 48%;
+}
+
+#map {
+  bottom: 0px;
+  height: 100%;
+  left: 362px;
+  position: absolute;
+  right: 0px;
+}
+
+.options-box {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 94%;
+  line-height: 35px;
+  padding: 10px 10px 30px 10px;
+  text-align: left;
+  width: 340px;
+}
+#pano {
+  width: 200px;
+  height: 200px;
+}
+.text {
+  font-size: 12px;
+}
+
+#toggle-drawing {
+  width: 27%;
+  position: relative;
+  margin-left: 10px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+  </head>
+  <body>
+    Calculate the area of a triangle:<br>
+    <label>Base (b): </label><input type="textbox" name="width"> cm<br>
+    <label>Height (h): </label><input type="textbox" name="height"> cm<br>
+    <button onclick="calculateArea()">Compute</button><br>
+
+    <label for="output">The area is: </label><input type="textbox" name="output"> cm²
+
+    <script>
+      function calculateArea() {
+        let base = document.getElementsByName('width')[0].value;
+        let height = document.getElementsByName('height')[0].value;
+        let area = (1/2) * parseFloat(base) * parseFloat(height);
+
+        document.getElementsByName('output')[0].value = area;
+      }
+    </script>
+  </body>
+</html>
